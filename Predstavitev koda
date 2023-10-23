@@ -1,0 +1,109 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+
+\title{Predstavitev 1. domače naloge}
+\author{Matija Mačus}
+\institute{Fakulteta za strojništvo}
+\date{\today}
+\titlegraphic{\includegraphics[width=2cm]{logo.png}} % Adjust the width and file name as needed
+
+\usetheme{Madrid}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Kazalo}
+  \tableofcontents
+\end{frame}
+
+\section{Uvod}
+\begin{frame}{Uvod}
+Uporaba generatorja naključnih števil v Matlabu:\\
+\begin{itemize}
+
+    \item Naloga od nas zahteva, da s pomočjo metode Monte Carlo izračunamo pribljižno vrednost števila π s pomočjo primerjave ploščine kroga in njemu očrtanega kvadrata. Ploščino ocenimo tako, da generiramo točke in preverimo ali se nahajajo znotraj kroga ali znotra očrtanega kvadrata. 
+    \item Kasneje pa z variacijo št. generiranih točk opazujemo numerično napako od točne vrednosti števila $\pi$.
+
+    
+\end{itemize}
+
+\end{frame}
+
+\section{Oblikovanje programa}
+\begin{frame}{Funckija calcpi()}
+Najprej oblikujemo funkcijo calcpi(), kateri predhodno določimo št. točk in radij izbranega kroga.\\
+Nato v funkcijo vplejemo podfunkcijo areapi(nabor tock, R) in s pomočjo le te določimo ocenjeno vrednost $\pi$, napako in koordinate točk znotraj kroga.\\
+\end{frame}
+
+\begin{frame}
+  \frametitle{Rezultat funkcije calcpi()}
+Funkcija nam vrne sledeč rezultat:
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{cw1.png}
+    \caption{Rezultat funkcije calcpi()}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}{Anonimna funkcija}
+
+Navodilo od nas zahteva tudi, da oblikujemo anonimno funkcijo, ki ob klicu ovrednoti, ali predhodno naključno izbrani koordinati ležita na krožnici izbranega kroga. Funkcijo definiramo znotraj funkcije areapi():
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{anonimna.png}
+    \caption{Prikaz anonimne funkcije znotraj kode}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Rezultat anonimne funkcije}
+Funkcija nam vrne sledeč rezultat:
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{anon2.png}
+    \caption{Rezultat anonimne funkcije}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Grafična predstavitev}
+
+Navodilo od nas zahteva tudi, da oblikujemo funkcijo, ki omogoča izris in grafično vizualizacijo obravnavanih naključno generiranih točk s pomočjo orodja scatter. 
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{izris.png}
+    \caption{Prikaz kode za grafični izris}
+  \end{figure}
+\end{frame}
+
+
+\section{Grafični prikaz in komentar}
+\begin{frame}{Grafi}
+Kot pričakovano, z večajem števila naključno generiranih točk izboljšujemo odstopanje rezultata od točne vrednosti števila $\pi$. Kodo areapi() lahko nadgradimo tudi tako, da določimo sprejemljivo mejo odstopanja in število generiranih točk iterativno povečujemo, dokler ne dosežemo želene natančnosti.
+\end{frame}
+
+\begin{frame}{Grafični prikaz za 100 točk}
+  \centering
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{1.1.jpg}
+    \caption{Grafični prikaz za 100 točk}
+  \end{figure}  
+\end{frame}
+
+
+\begin{frame}{Grafični prikaz za 10000 točk}
+  \centering
+\begin{figure}
+    \includegraphics[width=0.7\textwidth]{2.2.jpg}
+    \caption{Grafični prikaz za 10000 točk}
+  \end{figure}
+
+\end{frame}
+
+
+
+\end{document}
