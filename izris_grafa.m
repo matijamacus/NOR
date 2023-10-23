@@ -18,5 +18,5 @@ function izris_grafa(St_Tock, R)
     title('Razporeditev naključno generiranih točk');
     xlabel('x-os');
     ylabel('y-os');
-    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica'); 
+    legend('Krožnica','Znotraj krožnice', 'Zunaj krožnice'); 
 end
