@@ -57,6 +57,10 @@ function izris_grafa(St_Tock, R)
     
     Plot_kroznice(R);
     axis equal;
+    title('Naključno generirane točke na krožnici z lokom');
+    xlabel('X-os');
+    ylabel('Y-os');
+    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica');
 end
 
 
