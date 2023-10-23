@@ -15,5 +15,8 @@ function izris_grafa(St_Tock, R)
     
     Plot_kroznice(R);
     axis equal;
-       
+    title('Razporeditev naključno generiranih točk');
+    xlabel('x-os');
+    ylabel('y-os');
+    legend('Znotraj krožnice', 'Zunaj krožnice', 'Krožnica'); 
 end
