@@ -15,5 +15,5 @@ function izris_grafa(St_Tock, R)
     
     Plot_kroznice(R);
     axis equal;
-   
+       
 end
