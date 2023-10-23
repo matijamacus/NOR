@@ -24,9 +24,8 @@
 \begin{frame}{Uvod}
 Uporaba generatorja naključnih števil v Matlabu:\\
 \begin{itemize}
-
-    \item Naloga od nas zahteva, da s pomočjo metode Monte Carlo izračunamo pribljižno vrednost števila π s pomočjo primerjave ploščine kroga in njemu očrtanega kvadrata. Ploščino ocenimo tako, da generiramo točke in preverimo ali se nahajajo znotraj kroga ali znotra očrtanega kvadrata. 
-    \item Kasneje pa z variacijo št. generiranih točk opazujemo numerično napako od točne vrednosti števila $\pi$.
+    \item Naloga od nas zahteva, da s pomočjo metode Monte Carlo izračunamo pribljižno vrednost števila π s pomočjo primerjave ploščine kroga in njemu očrtanega kvadrata. Ploščino ocenimo tako, da generiramo točke in preverimo ali se nahajajo znotraj kroga ali znotra očrtanega kvadrata. \pause
+    \item Kasneje pa z variacijo št. generiranih točk opazujemo numerično napako od točne vrednosti števila $\pi$.\pause
 
     
 \end{itemize}
